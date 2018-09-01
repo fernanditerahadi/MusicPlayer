@@ -1,0 +1,59 @@
+.Song {
+    display: block;
+}
+
+.Song-container {
+    display: flex;
+    background-color: #333;
+    color: #eee;
+    height: 60px;
+}
+
+.Song-id {
+    padding: 0px 4px 0px 4px;
+    text-align: left;
+    width: 5%;
+    padding: 4px 0px 0px 12px;
+    margin: 4px 0px 4px 0px;
+    font-size: 0.8em;
+}
+
+.Song-titleartist-container {
+    text-align: left;
+    width: 15em;
+    width: 75%;
+    margin: 4px 0px 4px 0px;
+}
+
+.Song-title {
+    font-size: 1em;
+    font-weight: bold;
+    padding: 4px 0px 0px 4px;
+    margin: 0;
+}
+
+.Song-artist {
+    font-weight: lighter;
+    font-size: 0.8em;
+    font-style: italic;
+    padding: 4px 0px 0px 4px;
+    margin: 0;
+}
+
+.Song-duration-container {
+    margin: 4px 0px 4px 0px;
+    width: 10%;
+}
+
+.Song-duration {
+    font-size: 0.8em;
+    text-align: center;
+    padding: 4px 4px 4px 4px;
+}
+
+.Song-seperator {
+    display: block;
+    height: 1px;
+    width: 100%;
+    background-color: #444;
+}

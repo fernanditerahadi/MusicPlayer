@@ -1,0 +1,36 @@
+[{
+    "id": 1,
+    "artist": "Anitek",
+    "title": "Ash",
+    "url": "Anitek_Ash.mp3"
+  },
+
+  {
+    "id": 2,
+    "artist": "C-Doc",
+    "title": "Don't (Bonus Non LP Track)",
+    "url": "C-Doc_Dont.mp3"
+  },
+  
+  {
+    "id": 3,
+    "artist": "DJ Def Chad",
+    "title": "Hand Outz (Instrumental)",
+    "url": "DJ_Def_Chad_Hand_Outz_Instrumental.mp3"
+  },
+  
+  {
+    "id": 4,
+    "artist": "dustmotes",
+    "title": "Soulbox",
+    "url": "dustmotes_Soulbox.mp3"
+  },
+
+  {
+    "id": 5,
+    "artist": "LOWdown",
+    "title": "STACHPYLE! (Pylestrumental)",
+    "url": "LOWdown_STACHPYLE_Pylestrumental.mp3"
+  }
+]
+  

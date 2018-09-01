@@ -1,0 +1,23 @@
+.Control {
+    background-color: #222;
+    height: 120px;
+    margin: 0px;
+    padding: 8px 4px 4px 4px;
+}
+
+.Control-info-container {
+    display: flex;
+}
+
+.Control-info-container p {
+    text-align: center;
+    color: #eee;
+    font-size: 1em;
+    margin: auto;
+}
+
+.Control-button-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

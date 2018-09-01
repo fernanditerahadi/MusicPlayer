@@ -1,0 +1,17 @@
+.Button-container {
+    margin: 4px 0px 4px 0px;
+    width: 45px;
+    height: 45px;
+    position: relative;
+}
+
+.Button {
+    max-width: 60%;
+    max-height: 60%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    margin-top: 0px;
+    transform: translate(-50%, -50%);
+}
