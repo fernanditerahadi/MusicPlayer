@@ -15,14 +15,16 @@ const SONGS = Songs;
 
 class App extends Component {
   state = {
-    songs: SONGS.map((song) => ({...song, play:false}))
+    songs: SONGS.map((song) => ({...song, play:false})),
+    current: 0,
+    play: false
   };
 
   togglePlay = (i) => {
     const newSongs = this.state.songs.map((song) => ({...song, play:false}));
     newSongs[i] = { ...newSongs[i], play: !this.state.songs[i].play};
-    this.setState({songs: newSongs});
-  }
+    this.setState({songs: newSongs, current: i});
+  };
 
   render() {
     console.log('songs', this.state.songs)
@@ -30,10 +32,10 @@ class App extends Component {
       <div className="App">
         <Header />
         {this.state.songs.map((song,i) => (<Song key={i} onClick={() => this.togglePlay(i)} object={song} />))}
-        <Control button={this.state.play ? playIcon : pauseIcon}/>
+        <Control object={this.state.songs[this.state.current]} onClick={() => this.togglePlay(this.state.current)}/>
       </div>
     );
-  }
+  };
 }
 
 export default App;

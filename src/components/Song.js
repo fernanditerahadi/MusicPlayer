@@ -12,7 +12,6 @@ class Song extends Component {
   audio = new Audio(require(".././assets/audios/" + this.props.object.url));
 
   componentDidMount() {
-    console.log('mounted')
     this.audio.onloadedmetadata = () => {
       this.setState({ duration: this.audio.duration });
     }
@@ -41,7 +40,7 @@ class Song extends Component {
             <p className="Song-duration">{formattedDuration}</p>
           </div>
           <div onClick={this.props.onClick}>
-            <Button icon={!this.props.object.play ? playIcon : pauseIcon } />
+            <Button icon={!this.props.object.play ? playIcon : pauseIcon} />
           </div>
         </div>
         <div className="Song-seperator" />
