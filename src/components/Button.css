@@ -3,6 +3,7 @@
     width: 45px;
     height: 45px;
     position: relative;
+    transition: 0.1s;
 }
 
 .Button {
@@ -14,4 +15,8 @@
     margin-right: -50%;
     margin-top: 0px;
     transform: translate(-50%, -50%);
+}
+
+.Button-container:hover {
+    transform: scale(1.2);
 }

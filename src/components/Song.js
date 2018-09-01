@@ -9,7 +9,8 @@ import playIcon from './../assets/images/ic_play.png';
 import pauseIcon from './../assets/images/ic_pause.png';
 
 class Song extends Component {
-  audio = new Audio(require(".././assets/audios/" + this.props.object.url));
+  audio = this.props.object.audio;
+  play = this.props.object.play;
 
   componentDidMount() {
     this.audio.onloadedmetadata = () => {
@@ -23,6 +24,10 @@ class Song extends Component {
       this.audio.play();
     } else if (prevProps.object.play && !this.props.object.play) {
       this.audio.pause();
+    }
+
+    this.audio.onended = () => {
+      this.props.object.play = false;
     }
   }
 

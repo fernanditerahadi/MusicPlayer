@@ -5,7 +5,7 @@ import './Control.css';
 import Button from './Button';
 
 import backIcon from '.././assets/images/ic_back.png'
-import nextIcon from '.././assets/images/ic_next.png'
+import seekIcon from '.././assets/images/ic_next.png'
 import playIcon from './../assets/images/ic_play.png';
 import pauseIcon from './../assets/images/ic_pause.png';
 
@@ -29,11 +29,16 @@ class Control extends Component {
                     <p>"{this.props.object.title}"&nbsp;-&nbsp;{this.props.object.artist}</p>
                 </span>
                 <span className="Control-button-container">
-                    <Button style={this.sideButtonSize} icon={backIcon} />
+                    <div onClick={this.props.onBack}>
+                        <Button style={this.sideButtonSize} icon={backIcon} />
+                    </div>
                     <div onClick={this.props.onClick}>
                         <Button style={this.centerButtonSize} icon={!this.props.object.play ? playIcon : pauseIcon} />
                     </div>
-                    <Button style={this.sideButtonSize} icon={nextIcon} />
+                    <div onClick={this.props.onSeek}>
+                        <Button style={this.sideButtonSize} icon={seekIcon} />
+                    </div>
+
                 </span>
             </div>
         );
