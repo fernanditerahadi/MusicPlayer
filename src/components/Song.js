@@ -10,12 +10,13 @@ import pauseIcon from './../assets/images/ic_pause.png';
 
 class Song extends Component {
   audio = this.props.object.audio;
-  play = this.props.object.play;
 
   componentDidMount() {
     this.audio.onloadedmetadata = () => {
       this.setState({ duration: this.audio.duration });
     }
+
+
   }
 
   componentDidUpdate(prevProps) {
@@ -27,8 +28,9 @@ class Song extends Component {
     }
 
     this.audio.onended = () => {
-      this.props.object.play = false;
+      this.props.handler();
     }
+
   }
 
   render() {

@@ -2,6 +2,10 @@
     display: block;
 }
 
+.Song:hover{
+    opacity: 0.95;
+}
+
 .Song-container {
     display: flex;
     background-color: #333;

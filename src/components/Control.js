@@ -22,6 +22,13 @@ class Control extends Component {
         height: 85
     };
 
+    componentDidUpdate(prevProps) {
+        this.props.object.audio.onended = () => {
+            this.props.handler();
+        }
+
+    }
+
     render() {
         return (
             <div className="Control">
